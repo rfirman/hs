@@ -11,6 +11,6 @@ for item in filer:
     if checker.check(item):
         print(Fore.RED+'Bad proxy',item)
     else:
-        phile=open('good.txt','a')
+        phile=open('p.txt','a')
         phile.write(item)
         print(Fore.GREEN+'Good proxy',item)
