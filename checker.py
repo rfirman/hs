@@ -8,7 +8,7 @@ class checker(object):
         url='http://google.com'
         try:
             liner=filename.split('\n',1)[0]
-            requests.get(url,proxies={'http':'http://'+liner},timeout=(3.05,27))
+            requests.get(url,proxies={'http':'http://'+liner},timeout=(3.05,10))
         except requests.exceptions.ConnectionError as e:
             print(Fore.RED+'Error',e)
             return e
